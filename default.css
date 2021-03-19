@@ -1,0 +1,20 @@
+:root{
+    --gray-color: #999;
+    --primary-color: blue;
+    --primary-color: linear-gradient(to right, #fc6767, #ec008c);
+}
+body{
+    background: #f0f3f7;
+    margin: 0;
+    padding: 0;
+}
+.mobile-menu, .branding{
+    display: none;
+}
+.top-bar,.nav{
+    max-width: min(80%,100%);
+    margin: 0 auto;
+}
+i{
+    cursor: pointer;
+}
