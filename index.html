@@ -6,133 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="large-devices.css">
-    <link rel="stylesheet" href="small-devices.css">
-    <title>Document</title>
+    <title>Fitness 0.5</title>
 </head>
 
 <body>
 
-    <!-- Main Menu Section -->
-    <section class="menu">
-
-        <!-- Topbar Wrapper -->
-        <div class="wrapper-top-bar">
-
-            <!-- Top Bar-->
-            <div class="top-bar">
-
-                <!-- Left -->
-                <div class="top-left">
-
-                    <div class="email">
-                        <i class="fas fa-envelope"></i>
-                        <!-- <i class="fab fa-facebook-f"></i> -->
-
-                        <span>ms8750122327@gmail.com</span>
-                    </div>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-youtube"></i>
-                </div>
-                <!-- Right -->
-                <div class="top-right">
-                    <i class="fas fa-bars"></i>
-                </div>
+    <header>
+        <div class="container">
+            <input type="checkbox" id="check" name="">
+            <div class="logo-container">
+                <h3 class="logo">BRAND <span>Name</span></h3>
             </div>
 
-        </div>
-        <!-- Nav -->
-        <div class="nav">
-            <!-- Nav Left -->
-            <div class="nav-left">
+            <div class="nav-btn">
 
-                <div class="logo">
-                    <img src="gym-crossfit-mobile.png" alt="">
-                </div>
-                <div class="phone-number">
-                    <span class="text"> Call/Whatsapp Now</span>
-                    <span class="number"> +918929987849</span>
-                </div>
-
-            </div>
-
-            <!-- Nav Right -->
-            <div class="nav-right">
-
-                <!-- Visible ONly on Small Devices -->
-                <input type="checkbox" id="checkbox" class="mobile-menu">
-                <label for="checkbox" class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-
-                </label>
-
-                <!-- Main Navigation -->
                 <div class="nav-links">
-                    <!-- Visible only on Small Devices -->
-                    <div class="branding">
-                        <div class="logo">
-                            <img src="gym-crossfit-mobile.png" alt="">
-                            <p>FITNESS ZONE</p>
-                        </div>
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#">Workout<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link"><a href="#">Beginner</a></li>
+                                    <li class="dropdown-link"><a href="#">Advanced</a></li>
+                                    <li class="dropdown-link"><a href="#">Crossfit</a></li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Nutrition<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link"><a href="#">Muscle Gain</a></li>
+                                    <li class="dropdown-link"><a href="#">Fat Loss</a></li>
+                                    <li class="dropdown-link"><a href="#">Balanced Diet</a></li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Healthline<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link"><a href="#">Cardiac Issues</a></li>
+                                    <li class="dropdown-link"><a href="#">Body Impared</a></li>
+                                    <li class="dropdown-link"><a href="#">Mental Health</a></li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Crossfit<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link"><a href="#">Beginner</a></li>
+                                    <li class="dropdown-link"><a href="#">Advanced</a></li>
+                                    <li class="dropdown-link"><a href="#">Crossfit</a></li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="btn transparent">Login</a>
+                    <a href="#" class="btn solid">Signup</a>
 
-                        <label for="checkbox" class="mobile-menu close-btn">
-                            <i class="fas fa-times"></i>
-                        </label>
-                    </div>
+                </div>
 
-                    <!-- Links -->
-                    <div class="links">
-                        <ul>
-                            <li><a href="#">Workouts</a>
-                                <div class="submenu-1">
-                                    <ul>
-                                        <li><a href="#">Beginner</a></li>
-                                        <li><a href="#">Advanced</a></li>
-                                        <li><a href="#">Crossfit</a></li>
+            </div>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div>
 
-
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li><a href="#">Nutrition</a>
-                                <div class="submenu-1">
-                                    <ul>
-                                        <li><a href="#">Muscle Gain Diet</a></li>
-                                        <li><a href="#">Fat Loss Diet</a></li>
-                                        <li><a href="#">Children Nutrition</a></li>
-
-
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Health Issues</a>
-                                <div class="submenu-1">
-                                    <ul>
-                                        <li><a href="#">Beginner</a></li>
-                                        <li><a href="#">Advanced</a></li>
-                                        <li><a href="#">Crossfit</a></li>
-
-
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Contact Now</a></li>
-
-                        </ul>
-                    </div>
-                    <!-- Call to action button -->
-                    <div class="cta">
-                        <a href="#">Login</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="hero">
-
-    </section>
+    </header>
+    <main>
+        <section>
+            <div class="overlay">
+            </div>
+        </section>
+    </main>
     <script src="https://kit.fontawesome.com/c835558c47.js" crossorigin="anonymous"></script>
 </body>
 
