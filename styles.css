@@ -12,16 +12,19 @@ body{
 }
 
 ul{
+
     list-style: none;
 }
 a{
     text-decoration: none;
 }
-
+h1{
+    color: #fff;
+}
 header{
     position: sticky;
     top: 0;
-    background-color: #60b4df;
+    background-color: rgba(0,0,0,0.9);
     width: 100%;
     z-index: 1000;
     height: 3rem;
@@ -39,7 +42,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(56,165,238,0.5);
+    background-color: rgb(0,0,0,0.5);
 }
 .container{
     max-width: 65rem;
@@ -124,7 +127,7 @@ section{
 }
 .btn.solid, .btn.transparent:hover{
     background-color: #fff;
-    color: #69bde7;
+    color: #000;
 }
 .btn.transparent, .btn.solid:hover{
     background-color: transparent;
@@ -168,8 +171,8 @@ section{
 }
 .dropdown-link > a{
     display: flex;
-    background-color: white;
-    color: #3498db;
+    background-color: #000;
+    color: #fff;
     padding: .5rem 1rem;
     font-size: .9rem;
     justify-content: space-between;
@@ -180,20 +183,22 @@ section{
     border-bottom: 1px solid #efefef;
 }
 .dropdown-link:hover >a{
-    background-color: #3498db;
-    color: white;
+    background-color: transparent;
+    color: #000;
+    
+    
 }
 .dropdown-link:first-child:hover ~ .arrow{
-    background-color: #3498db;
+    background-color: #000;
 }
 /* Main code for Displaying dropdown menu */
 .nav-link:hover > .dropdown,
 .dropdown-link:hover > .dropdown{
     transform: translate(0,0);
-    opacity: 1;
+    opacity: .7;
     pointer-events: auto;
-
 }
+
 .hamburger-menu-container{
     flex: 1;
     /* background-color: yellow; */
@@ -202,6 +207,7 @@ section{
     justify-content: flex-end;
 
 }
+
 .hamburger-menu{
     width: 2.5rem;
     height: 2.5rem;
@@ -280,14 +286,14 @@ section{
         top: 3rem;
         left: 0;
         width: 100%;
-        background-color: #69bde7;
+        background-color: rgba(0,0,0,0.9);
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         overflow-x: hidden;
         overflow-y: auto;
         transform:translateX(100%);
-        transition: .45s;
+        transition: .65s;
 
     }
     #check:checked ~ .nav-btn{
@@ -295,7 +301,7 @@ section{
     }
     #check:checked ~ .nav-btn .nav-link,
     #check:checked ~ .nav-btn .log-sign{
-        animation: animation .3s ease forwards var(--i);
+        animation: animation .5s ease forwards var(--i);
     }
     .hamburger-menu-container{
         display: flex;
@@ -332,7 +338,7 @@ section{
     }
     .nav-link:hover >a{
         transform: scale(1);
-        background-color: #50a9d6;
+        background-color: #000;
     }
     .dropdown{
         position:initial;
@@ -344,7 +350,7 @@ section{
         width: 100%;
         padding:0;
         display: none;
-        background-color: #3183ac;
+        background-color: #fff;
     }
     .nav-link:hover > .dropdown,
     .dropdown-link:hover > .dropdown{
@@ -356,7 +362,7 @@ section{
     }
     .dropdown-link > a{
         background-color: transparent;
-        color: #fff;
+        color: #000;
         padding: 1.2rem 2rem;
     }
     .dropdown-link:not(:nth-last-child(2)){
@@ -364,22 +370,23 @@ section{
     }
     .arrow{
         z-index: 1;
-        background-color: #69bde7;
+        background-color: #000;
         left:10%;
         transform: scale(1.1) rotate(45deg);
         transition: 0.5s;
     }
     .nav-link:hover > .arrow{
-        background-color: #50a9d6;
+        background-color: #fff;
     }
     .dropdown .dropdown .arrow{
         display: none;
     }
     .dropdown-link:hover > a{
-        background-color: #3a91bd;
+        background-color: #000;
+        color: #fff;
     }
     .dropdown-link:first-child:hover ~ .arrow{
-        background-color: #50a9d6;
+        background-color: #fff;
     }
     .nav-link > a > i{
         font-size: 1.1rem;
