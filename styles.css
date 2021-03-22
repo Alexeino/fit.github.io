@@ -293,7 +293,7 @@ section{
         overflow-x: hidden;
         overflow-y: auto;
         transform:translateX(100%);
-        transition: .65s;
+        transition: .45s;
 
     }
     #check:checked ~ .nav-btn{
@@ -301,7 +301,7 @@ section{
     }
     #check:checked ~ .nav-btn .nav-link,
     #check:checked ~ .nav-btn .log-sign{
-        animation: animation .5s ease forwards var(--i);
+        animation: animation .3s ease forwards var(--i);
     }
     .hamburger-menu-container{
         display: flex;
